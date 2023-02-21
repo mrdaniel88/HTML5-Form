@@ -15,116 +15,143 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="container-fluid">
-            <h1>Payment form example</h1>
-        </div>
-        <div class="alert alert-danger" role="alert">
-            Some fields are missing
-        </div>
-        <div class="d-flex justify-content-between">
-            <fieldset>
-                Card #
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="XXXXXXXXXX" aria-label="card">
-                    </div>
+
+    <div class="container w-75 justify-center flex-fill">
+        <div class="card">
+            <div class="card-header">
+                <div class="container-fluid">
+                    <h1>Payment form example</h1>
                 </div>
-            </fieldset>
-            <fieldset>
-                CVC #
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="0000" aria-label="cvc">
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset>
-                Amount
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="XXXXXXXXXX" aria-label="card">
-                    </div>
-                </div>
-            </fieldset>
-        </div>
-        <div class="d-flex justify-content-between">
-            <div>
-                <fieldset>
-                    First Name
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" aria-label="firstName">
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    City
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" aria-label="city">
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    We accept
-                    <div class="row">
-                        <div class="col">
-                            <input type="radio" id="card1" name="fav_language" value="card1">
-                            <label for="card1"><i class="fa-brands fa-cc-visa"></i></label>
-                            <input type="radio" id="card2" name="fav_language" value="card2">
-                            <label for="card2"><i class="fa-brands fa-cc-mastercard"></i></label>
-                            <input type="radio" id="card3" name="fav_language" value="card3">
-                            <label for="card3"><i class="fa-brands fa-cc-diners-club"></i></label>
-                            <input type="radio" id="card4" name="fav_language" value="card4">
-                            <label for="card4"><i class="fa-brands fa-cc-paypal"></i></label>
-                        </div>
-                    </div>
-                </fieldset>
             </div>
-            <div>
-                <fieldset>
-                    Last Name
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" aria-label="lastName">
+            <div class="card-body">
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <div class="alert alert-danger" role="alert">
+                            Some fields are missing
                         </div>
                     </div>
-                </fieldset>
-                <div class="d-flex justify-content-between">
-                    <fieldset>
-                        State<br>
-                        <select id="state">
-                            <option value="bogota">Bogota</option>
-                            <option value="medellin">Medellin</option>
-                            <option value="cali">Cali</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        Postal Code
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control" aria-label="postal">
+                    <div class="container w-75 flex-column">
+                        <div class="d-flex">
+                            <div class="row">
+                                <div class="col">
+                                    <fieldset>
+                                        Card #
+                                        <input type="text" class="form-control" placeholder="XXXXXXXXXX"
+                                            aria-label="card">
+                                    </fieldset>
+                                </div>
+
+
+                                <div class="col">
+                                    <fieldset>
+                                        CVC #
+                                        <input type="text" class="form-control" placeholder="0000" aria-label="cvc">
+                                    </fieldset>
+                                </div>
+
+                                <div class="col">
+                                    <fieldset>
+                                        Amount
+
+                                        <input type="text" class="form-control" placeholder="Amount"
+                                            aria-label="amount">
+                                    </fieldset>
+                                </div>
                             </div>
                         </div>
-                    </fieldset>
-                    
+                    </div>
                 </div>
-                <fieldset>
-                    <div class="form-group">
-                        <label for="comment"><strong>Message</strong></label>
-                        <textarea class="form-control" rows="5" id="comment"
-                          placeholder="Add your message here"></textarea>
-                      </div>
+                <div class="container w-75 flex-column">
+                    <div class="d-flex">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <fieldset>
+                                        First Name
+                                        <input type="text" class="form-control" aria-label="firstName">
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <fieldset>
+                                    City
+                                    <input type="text" class="form-control" aria-label="city">
+                                </fieldset>
+                            </div>
 
-                </fieldset>
+                            <div class="col">
+                                <fieldset>
+                                    We accept:<br>
+                                    <input type="radio" id="card1" name="fav_language" value="card1">
+                                    <label for="card1"><i class="fa-brands fa-cc-visa"></i></label>
+                                    <input type="radio" id="card2" name="fav_language" value="card2">
+                                    <label for="card2"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                    <input type="radio" id="card3" name="fav_language" value="card3">
+                                    <label for="card3"><i class="fa-brands fa-cc-diners-club"></i></label>
+                                    <input type="radio" id="card4" name="fav_language" value="card4">
+                                    <label for="card4"><i class="fa-brands fa-cc-paypal"></i></label>
+                                </fieldset>
+                            </div>
+
+
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <fieldset>
+                                        Last Name
+                                        <input type="text" class="form-control" aria-label="lastName">
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="d-flex">
+                                    <div class="row">
+                                        <div class="col">
+                                            <fieldset>
+                                                State<br>
+                                                <select id="state">
+                                                    <option value="bogota">Bogota</option>
+                                                    <option value="medellin">Medellin</option>
+                                                    <option value="cali">Cali</option>
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col">
+                                            <fieldset>
+                                                Postal Code
+                                                <input type="text" class="form-control" aria-label="postal">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="comment"><strong>Message</strong></label>
+                                    <textarea class="form-control" rows="5" id="comment"
+                                        placeholder="Add your message here"></textarea>
+                                    <p style="font-size: smaller;">Add your notes here</p>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="d-flex justify-content-end">
-            <button type="button" class="btn btn-secondary">Cencel</button>
-            <button type="button" class="btn btn-success">Send</button>
+            <div class="card-footer">
+                <div class="container w-75">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-secondary">Cancel</button>
+                        <button type="button" class="btn btn-success">Send</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
